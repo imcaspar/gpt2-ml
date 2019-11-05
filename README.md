@@ -6,3 +6,5 @@
 ![Twitter Follow](https://img.shields.io/twitter/follow/imcaspar?style=social)
 
 GPT2 for Multiple Languages
+
+Research supported with Cloud TPUs from Google's TensorFlow Research Cloud (TFRC)

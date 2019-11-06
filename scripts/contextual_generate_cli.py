@@ -1,15 +1,14 @@
+import sys
+import os
+import argparse
+import json
+import re
 
 import tensorflow as tf
 import numpy as np
-import sys
-import json
-import sys
-
-from train.modeling import GroverModel, GroverConfig, _top_p_sample, sample
 from tqdm import tqdm
 
-import argparse
-
+from train.modeling import GroverModel, GroverConfig, sample
 from tokenization import tokenization
 
 parser = argparse.ArgumentParser(description='Contextual generation (aka given some metadata we will generate articles')
@@ -90,7 +89,7 @@ parser.add_argument(
 parser.add_argument(
     '-samples',
     dest='samples',
-    default=1,
+    default=5,
     type=int,
     help='num_samples',
 )
@@ -116,8 +115,9 @@ def extract_generated_target(output_tokens, tokenizer):
     }
 
 args = parser.parse_args()
-
-tokenizer = tokenization.FullTokenizer(vocab_file="../tokenization/bert-base-chinese-vocab.txt" , do_lower_case=True)
+proj_root_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+vocab_file_path = os.path.join(proj_root_path, "tokenization/bert-base-chinese-vocab.txt")
+tokenizer = tokenization.FullTokenizer(vocab_file=vocab_file_path , do_lower_case=True)
 news_config = GroverConfig.from_json_file(args.model_config_fn)
 
 # We might have to split the batch into multiple chunks if the batch size is too large
@@ -172,5 +172,6 @@ with tf.Session(config=tf_config, graph=tf.Graph()) as sess:
                     extraction = extract_generated_target(output_tokens=t_i, tokenizer=tokenizer)
                     gens.append(extraction['extraction'])
 
-            print(gens[0])
+            l = re.findall('.{1,80}', gens[0])
+            print("\n".join(l))
         text = input()

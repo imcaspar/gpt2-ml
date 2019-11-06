@@ -3,7 +3,7 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/imcaspar/gpt2-ml/blob/master/pretrained_model_demo.ipynb)
 ![GitHub](https://img.shields.io/github/license/imcaspar/gpt2-ml)
-![GitHub All Releases](https://img.shields.io/github/downloads/imcaspar/gpt2-ml/total)
+[![GitHub All Releases](https://img.shields.io/github/downloads/imcaspar/gpt2-ml/total)](https://github.com/imcaspar/gpt2-ml/releases)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/imcaspar/gpt2-ml/issues)
 ![GitHub stars](https://img.shields.io/github/stars/imcaspar/gpt2-ml?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/imcaspar?style=social)

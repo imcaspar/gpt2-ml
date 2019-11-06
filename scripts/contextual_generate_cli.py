@@ -5,7 +5,6 @@ import sys
 import json
 import sys
 
-sys.path.append('./')
 from train.modeling import GroverModel, GroverConfig, _top_p_sample, sample
 from tqdm import tqdm
 
@@ -42,7 +41,7 @@ parser.add_argument(
 parser.add_argument(
     '-model_ckpt',
     dest='model_ckpt',
-    default='../models/base/model.ckpt',
+    default='../models/mega/model.ckpt',
     type=str,
     help='checkpoint file for the model',
 )
@@ -118,7 +117,7 @@ def extract_generated_target(output_tokens, tokenizer):
 
 args = parser.parse_args()
 
-tokenizer = tokenization.FullTokenizer(vocab_file="bert-base-chinese-vocab.txt" , do_lower_case=True)
+tokenizer = tokenization.FullTokenizer(vocab_file="../tokenization/bert-base-chinese-vocab.txt" , do_lower_case=True)
 news_config = GroverConfig.from_json_file(args.model_config_fn)
 
 # We might have to split the batch into multiple chunks if the batch size is too large

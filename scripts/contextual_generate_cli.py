@@ -172,6 +172,6 @@ with tf.Session(config=tf_config, graph=tf.Graph()) as sess:
                     extraction = extract_generated_target(output_tokens=t_i, tokenizer=tokenizer)
                     gens.append(extraction['extraction'])
 
-            l = re.findall('.{1,80}', gens[0])
+            l = re.findall('.{1,70}', gens[0].replace('[UNK]', ''))
             print("\n".join(l))
         text = input()

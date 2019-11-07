@@ -6,7 +6,6 @@ import re
 
 import tensorflow as tf
 import numpy as np
-from tqdm import tqdm
 
 from train.modeling import GroverModel, GroverConfig, sample
 from tokenization import tokenization
@@ -145,7 +144,7 @@ with tf.Session(config=tf_config, graph=tf.Graph()) as sess:
 
     saver = tf.train.Saver()
     saver.restore(sess, args.model_ckpt)
-    print('Loaded model.')
+    print('Loaded model. Input something please:')
     text = input()
     while text != "":
         for i in range(args.samples):

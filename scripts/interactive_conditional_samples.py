@@ -149,7 +149,6 @@ with tf.Session(config=tf_config, graph=tf.Graph()) as sess:
     while text != "":
         for i in range(args.samples):
             print("Sample,", i + 1, " of ", args.samples)
-            # Let's go!
             line = tokenization.convert_to_unicode(text)
             bert_tokens = tokenizer.tokenize(line)
             encoded = tokenizer.convert_tokens_to_ids(bert_tokens)

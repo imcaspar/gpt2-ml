@@ -16,7 +16,7 @@
 
 
 ## 预训练模型
-15亿参数中文预训练模型 [**[Google Drive 下载]**](https://drive.google.com/open?id=1_6Py_UEGSAMt2RCq_dxsGNfpF4jMhm-5)
+15亿参数中文预训练模型 [**[Google Drive 下载]**](https://drive.google.com/open?id=1n_5-tgPpQ1gqbyLPbP1PwiFi2eo7SWw_)
 
 训练语料来自 [THUCNews](http://thuctc.thunlp.org/#%E4%B8%AD%E6%96%87%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E6%95%B0%E6%8D%AE%E9%9B%86THUCNews) 以及 [nlp_chinese_corpus](https://github.com/brightmart/nlp_chinese_corpus)，清洗后总文本量约 15G 
 

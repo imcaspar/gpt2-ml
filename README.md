@@ -10,7 +10,7 @@
 
 [**中文说明**](./README_CN.md) | [**English**](./README.md)
 
-- [x] Simplifed GPT2 train scripts（based on Grover, supporting TPUs）
+- [x] Simplified GPT2 train scripts（based on Grover, supporting TPUs）
 - [x] Ported bert tokenizer，multilingual corpus compatible
 - [x] 1.5B GPT2 pretrained Chinese model ( ~15G corpus, 10w steps )
 - [x] Batteries-included Colab demo [#](https://github.com/imcaspar/gpt2-ml#google-colab)

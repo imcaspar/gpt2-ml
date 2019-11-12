@@ -41,7 +41,7 @@
 ```
 @misc{GPT2-ML,
   author = {Zhibo Zhang},
-  title = {GPT2-ML: GPT2 for Multiple Languages},
+  title = {GPT2-ML: GPT-2 for Multiple Languages},
   year = {2019},
   publisher = {GitHub},
   journal = {GitHub repository},

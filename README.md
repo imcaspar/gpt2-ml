@@ -13,6 +13,7 @@
 - [x] 简化整理 GPT2 训练代码（based on grover, supports TPUs）
 - [x] 移植 bert tokenizer，添加多语言支持
 - [x] 15亿参数 GPT2 中文预训练模型( 15G 语料，训练 10w 步 )
+- [x] 开箱即用的模型生成效果 demo [#](https://github.com/imcaspar/gpt2-ml#google-colab)
 - [ ] 15亿参数 GPT2 中文预训练模型( 50G 语料，训练 100w 步 ，**预计 12 月初发布**)
 
 
@@ -28,11 +29,25 @@
 
 ## Google Colab
 只需三次鼠标点击（不包括 Colab 授权流程），体验 15 亿参数中文预训练模型生成效果：
+
 [**[Colab Notebook]**](https://colab.research.google.com/github/imcaspar/gpt2-ml/blob/master/pretrained_model_demo.ipynb)
+
 <img src="./.github/demo.png" width="640">
 
 ## 训练
 
+## Citing
+
+```
+@misc{GPT2-ML,
+  author = {Zhibo Zhang},
+  title = {GPT2-ML: GPT2 for Multiple Languages},
+  year = {2019},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/imcaspar/gpt2-ml}},
+}
+```
 
 ## Reference
 https://github.com/google-research/bert

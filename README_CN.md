@@ -2,11 +2,11 @@
 ## **GPT2** for **M**ultiple **L**anguages
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/imcaspar/gpt2-ml/blob/master/pretrained_model_demo.ipynb)
-![GitHub](https://img.shields.io/github/license/imcaspar/gpt2-ml)
+[![GitHub](https://img.shields.io/github/license/imcaspar/gpt2-ml)](https://github.com/imcaspar/gpt2-ml)
 [![GitHub All Releases](https://img.shields.io/github/downloads/imcaspar/gpt2-ml/total)](https://github.com/imcaspar/gpt2-ml/releases)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/imcaspar/gpt2-ml/issues)
-![GitHub stars](https://img.shields.io/github/stars/imcaspar/gpt2-ml?style=social)
-![Twitter Follow](https://img.shields.io/twitter/follow/imcaspar?style=social)
+[![GitHub stars](https://img.shields.io/github/stars/imcaspar/gpt2-ml?style=social)](https://github.com/imcaspar/gpt2-ml)
+[![Twitter Follow](https://img.shields.io/twitter/follow/imcaspar?style=social)](https://twitter.com/intent/follow?screen_name=imcaspar)
 
 [**中文说明**](./README_CN.md) | [**English**](./README.md)
 

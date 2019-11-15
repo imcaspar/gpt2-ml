@@ -11,7 +11,7 @@ from train.modeling import GroverModel, GroverConfig, sample
 from tokenization import tokenization
 
 ##### ignore tf deprecated warning temporarily
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 from tensorflow.python.util import deprecation
 deprecation._PRINT_DEPRECATION_WARNINGS = False

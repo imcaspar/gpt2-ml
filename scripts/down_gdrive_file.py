@@ -5,18 +5,18 @@ from googleapiclient.discovery import build
 from apiclient.http import MediaIoBaseDownload
 from tqdm import tqdm
 
-parser = argparse.ArgumentParser(description='Contextual generation (aka given some metadata we will generate articles')
+parser = argparse.ArgumentParser(description='Simple file download script for Google Drive')
 parser.add_argument(
     '-file_id',
     dest='file_id',
     type=str,
-    help='Path to a JSONL containing metadata',
+    help='File id in Google Drive URL',
 )
 parser.add_argument(
     '-file_path',
     dest='file_path',
     type=str,
-    help='Out jsonl, which will contain the completed jsons',
+    help='Output file path',
 )
 
 args = parser.parse_args()

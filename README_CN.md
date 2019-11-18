@@ -30,7 +30,7 @@ SHA256: 4a6e5124df8db7ac2bdd902e6191b807a6983a7f5d09fb10ce011f9a073b183e
 
 
 ## Google Colab
-只需三次鼠标点击（不包括 Colab 授权流程），体验 15 亿参数中文预训练模型生成效果：
+只需两次鼠标点击（不包括 Colab 授权流程），体验 15 亿参数中文预训练模型生成效果：
 
 [**[Colab Notebook]**](https://colab.research.google.com/github/imcaspar/gpt2-ml/blob/master/pretrained_model_demo.ipynb)
 

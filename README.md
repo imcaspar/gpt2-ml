@@ -30,7 +30,7 @@ Using [Cloud TPU Pod v3-256](https://cloud.google.com/tpu/docs/types-zones#types
 
 
 ## Google Colab
-With just 3 clicks (not including Colab auth process), the 1.5B pretrained Chinese model demo is ready to go：
+With just 2 clicks (not including Colab auth process), the 1.5B pretrained Chinese model demo is ready to go:
 
 [**[Colab Notebook]**](https://colab.research.google.com/github/imcaspar/gpt2-ml/blob/master/pretrained_model_demo.ipynb)
 

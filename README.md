@@ -20,6 +20,8 @@
 ## Pretrained Model
 1.5B GPT2 pretrained Chinese model [**[Google Drive]**](https://drive.google.com/open?id=1n_5-tgPpQ1gqbyLPbP1PwiFi2eo7SWw_)
 
+SHA256: 4a6e5124df8db7ac2bdd902e6191b807a6983a7f5d09fb10ce011f9a073b183e
+
 Corpus from [THUCNews](http://thuctc.thunlp.org/#%E4%B8%AD%E6%96%87%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E6%95%B0%E6%8D%AE%E9%9B%86THUCNews) and [nlp_chinese_corpus](https://github.com/brightmart/nlp_chinese_corpus)
 
 Using [Cloud TPU Pod v3-256](https://cloud.google.com/tpu/docs/types-zones#types) to train 10w steps
@@ -28,7 +30,7 @@ Using [Cloud TPU Pod v3-256](https://cloud.google.com/tpu/docs/types-zones#types
 
 
 ## Google Colab
-With just 3 clicks (not including Colab auth process), the 1.5B pretrained Chinese model demo is ready to go：
+With just 2 clicks (not including Colab auth process), the 1.5B pretrained Chinese model demo is ready to go:
 
 [**[Colab Notebook]**](https://colab.research.google.com/github/imcaspar/gpt2-ml/blob/master/pretrained_model_demo.ipynb)
 

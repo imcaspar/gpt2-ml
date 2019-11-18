@@ -20,6 +20,8 @@
 ## 预训练模型
 15 亿参数中文预训练模型 [**[Google Drive 下载]**](https://drive.google.com/open?id=1n_5-tgPpQ1gqbyLPbP1PwiFi2eo7SWw_)
 
+SHA256: 4a6e5124df8db7ac2bdd902e6191b807a6983a7f5d09fb10ce011f9a073b183e
+
 训练语料来自 [THUCNews](http://thuctc.thunlp.org/#%E4%B8%AD%E6%96%87%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E6%95%B0%E6%8D%AE%E9%9B%86THUCNews) 以及 [nlp_chinese_corpus](https://github.com/brightmart/nlp_chinese_corpus)，清洗后总文本量约 15G 
 
 使用 [Cloud TPU Pod v3-256](https://cloud.google.com/tpu/docs/types-zones#types) 训练 10w 步
@@ -28,7 +30,7 @@
 
 
 ## Google Colab
-只需三次鼠标点击（不包括 Colab 授权流程），体验 15 亿参数中文预训练模型生成效果：
+只需两次鼠标点击（不包括 Colab 授权流程），体验 15 亿参数中文预训练模型生成效果：
 
 [**[Colab Notebook]**](https://colab.research.google.com/github/imcaspar/gpt2-ml/blob/master/pretrained_model_demo.ipynb)
 

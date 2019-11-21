@@ -41,7 +41,7 @@ SHA256: 4a6e5124df8db7ac2bdd902e6191b807a6983a7f5d09fb10ce011f9a073b183e
 ## 免责声明
 该项目中的内容仅供技术研究参考，不作为任何结论性依据。
 
-## Citing
+## Citation
 
 ```
 @misc{GPT2-ML,

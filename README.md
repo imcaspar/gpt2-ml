@@ -41,7 +41,7 @@ With just 2 clicks (not including Colab auth process), the 1.5B pretrained Chine
 ## Disclaimer
 The contents in this repository are for academic research purpose, and we do not provide any conclusive remarks.
 
-## Citing
+## Citation
 
 ```
 @misc{GPT2-ML,

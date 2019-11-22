@@ -797,9 +797,10 @@ def sample(news_config: GroverConfig, initial_context, eos_token, min_len, ignor
             return [new_ids, new_cache, new_probs]
 
         def cond(ctx, cache, probs):
-            is_eos = tf.reduce_all(tf.reduce_any(tf.equal(ctx, eos_token), axis=1))
+            # ctx = tf.Print(ctx,[tf.shape(ctx)])
+            is_eos = tf.reduce_all(tf.reduce_any(tf.equal(ctx[:,-1:], eos_token), axis=1))
             is_len = tf.greater(get_shape_list(ctx)[1], min_len)
-            return tf.logical_not(is_eos & is_len)
+            return tf.logical_not(tf.logical_and(is_eos, is_len))
 
         tokens, cache, probs = tf.while_loop(
             cond=cond, body=body, maximum_iterations=1025 - get_shape_list(ctx)[1],

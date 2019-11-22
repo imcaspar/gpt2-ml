@@ -6,7 +6,6 @@
 [![GitHub All Releases](https://img.shields.io/github/downloads/imcaspar/gpt2-ml/total)](https://github.com/imcaspar/gpt2-ml/releases)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/imcaspar/gpt2-ml/issues)
 [![GitHub stars](https://img.shields.io/github/stars/imcaspar/gpt2-ml?style=social)](https://github.com/imcaspar/gpt2-ml)
-[![Twitter Follow](https://img.shields.io/twitter/follow/imcaspar?style=social)](https://twitter.com/intent/follow?screen_name=imcaspar)
 
 [**中文说明**](./README_CN.md) | [**English**](./README.md)
 
@@ -41,7 +40,7 @@ With just 2 clicks (not including Colab auth process), the 1.5B pretrained Chine
 ## Disclaimer
 The contents in this repository are for academic research purpose, and we do not provide any conclusive remarks.
 
-## Citing
+## Citation
 
 ```
 @misc{GPT2-ML,

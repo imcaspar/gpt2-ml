@@ -12,7 +12,7 @@ from tokenization import tokenization
 
 ##### ignore tf deprecated warning temporarily
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.DEBUG)
 from tensorflow.python.util import deprecation
 deprecation._PRINT_DEPRECATION_WARNINGS = False
 try:
@@ -98,6 +98,20 @@ parser.add_argument(
     help='p to use for top p sampling. if this isn\'t none, use this for everthing'
 )
 parser.add_argument(
+    '-min_len',
+    dest='min_len',
+    default=1024,
+    type=int,
+    help='min length of sample',
+)
+parser.add_argument(
+    '-eos_token',
+    dest='eos_token',
+    default=60000,
+    type=int,
+    help='eos token id',
+)
+parser.add_argument(
     '-samples',
     dest='samples',
     default=5,
@@ -148,8 +162,9 @@ with tf.Session(config=tf_config, graph=tf.Graph()) as sess:
     initial_context = tf.placeholder(tf.int32, [batch_size_per_chunk, None])
     p_for_topp = tf.placeholder(tf.float32, [batch_size_per_chunk])
     eos_token = tf.placeholder(tf.int32, [])
+    min_len = tf.placeholder(tf.int32, [])
     tokens, probs = sample(news_config=news_config, initial_context=initial_context,
-                           eos_token=eos_token, ignore_ids=None, p_for_topp=p_for_topp,
+                           eos_token=eos_token, min_len=min_len, ignore_ids=None, p_for_topp=p_for_topp,
                            do_topk=False)
 
     saver = tf.train.Saver()
@@ -173,13 +188,14 @@ with tf.Session(config=tf_config, graph=tf.Graph()) as sess:
             for chunk_i in range(num_chunks):
                 tokens_out, probs_out = sess.run([tokens, probs],
                                                  feed_dict={initial_context: [context_formatted] * batch_size_per_chunk,
-                                                            eos_token: 60000,
+                                                            eos_token: args.eos_token, min_len: args.min_len,
                                                             p_for_topp: top_p[chunk_i]})
 
                 for t_i, p_i in zip(tokens_out, probs_out):
                     extraction = extract_generated_target(output_tokens=t_i, tokenizer=tokenizer)
                     gens.append(extraction['extraction'])
 
-            l = re.findall('.{1,70}', gens[0].replace('[UNK]', ''))
+            l = re.findall('.{1,70}', gens[0].replace('[UNK]', '').replace('##', ''))
             print("\n".join(l))
+        print('Next try:⬇️')
         text = input()

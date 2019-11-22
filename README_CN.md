@@ -6,7 +6,6 @@
 [![GitHub All Releases](https://img.shields.io/github/downloads/imcaspar/gpt2-ml/total)](https://github.com/imcaspar/gpt2-ml/releases)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/imcaspar/gpt2-ml/issues)
 [![GitHub stars](https://img.shields.io/github/stars/imcaspar/gpt2-ml?style=social)](https://github.com/imcaspar/gpt2-ml)
-[![Twitter Follow](https://img.shields.io/twitter/follow/imcaspar?style=social)](https://twitter.com/intent/follow?screen_name=imcaspar)
 
 [**中文说明**](./README_CN.md) | [**English**](./README.md)
 
@@ -41,7 +40,7 @@ SHA256: 4a6e5124df8db7ac2bdd902e6191b807a6983a7f5d09fb10ce011f9a073b183e
 ## 免责声明
 该项目中的内容仅供技术研究参考，不作为任何结论性依据。
 
-## Citing
+## Citation
 
 ```
 @misc{GPT2-ML,

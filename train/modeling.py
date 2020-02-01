@@ -124,12 +124,6 @@ def _attention_projection_and_transpose(x_flat, batch_size, seq_length, num_atte
     """
     batch_size_seq_length, dim = get_shape_list(x_flat, expected_rank=2)
 
-    # Had to remove this bc of generation script
-    # if (batch_size_seq_length != batch_size * seq_length):
-    #     raise ValueError("passed in a tensor of shape {} when batch_size={} and seq_length={}".format(
-    #         (batch_size_seq_length, dim), batch_size, seq_length
-    #     ))
-
     if dim != size_per_head * num_attention_heads:
         raise ValueError("passed in a tensor of shape {} when size_per_head={} and num_attention_heads={}".format(
             (batch_size_seq_length, dim), size_per_head, num_attention_heads
@@ -166,25 +160,11 @@ def attention_layer(x_flat, attention_mask, batch_size, seq_length, size_per_hea
     """
     batch_size_seq_length, dim = get_shape_list(x_flat, expected_rank=2)
 
-    # Had to remove this because of generation script
-    # if (batch_size_seq_length != batch_size * seq_length):
-    #     raise ValueError("passed in a tensor of shape {} when batch_size={} and seq_length={}".format(
-    #         (batch_size_seq_length, dim), batch_size, seq_length
-    #     ))
-
     if dim != size_per_head * num_attention_heads:
         raise ValueError("passed in a tensor of shape {} when size_per_head={} and num_attention_heads={}".format(
             (batch_size_seq_length, dim), size_per_head, num_attention_heads
         ))
 
-    # if do_cache and past is not None:
-    #     Shape will be (batch_size, 2, num_attention_heads, past_seq_length, dim)
-    #     past_shape = get_shape_list(past, 5)
-    #     desired_shape = (batch_size, 2, num_attention_heads, seq_length, dim)
-    #     if tuple(past_shape) != desired_shape:
-    #         raise ValueError(f"The shape of the cache is {past_shape} but we want {desired_shape}")
-
-    # [ batch_size, num_attention_heads, seq_length, size_per_head]
     query = _attention_projection_and_transpose(x_flat, batch_size=batch_size, seq_length=seq_length,
                                                 num_attention_heads=num_attention_heads, size_per_head=size_per_head,
                                                 name='query_layer',

@@ -11,14 +11,14 @@
 [**中文说明**](./README_CN.md) | [**English**](./README.md)
 
 - [x] Simplifed GPT2 train scripts（based on Grover, supporting TPUs）
-- [x] Ported bert tokenizer，multilingual corpus compatible
+- [x] Ported bert tokenizer, multilingual corpus compatible
 - [x] 1.5B GPT2 pretrained Chinese model ( ~15G corpus, 10w steps )
 - [x] Batteries-included Colab demo [#](https://github.com/imcaspar/gpt2-ml#google-colab)
 - [ ] 1.5B GPT2 pretrained Chinese model ( ~50G corpus, 100w steps )
 
 
 ## Pretrained Model
-1.5B GPT2 pretrained Chinese model [**[Google Drive]**](https://drive.google.com/open?id=1n_5-tgPpQ1gqbyLPbP1PwiFi2eo7SWw_)
+1.5B GPT2 pretrained Chinese model [**[Google Drive]**](https://drive.google.com/file/d/1IzWpQ6I2IgfV7CldZvFJnZ9byNDZdO4n)
 
 SHA256: 4a6e5124df8db7ac2bdd902e6191b807a6983a7f5d09fb10ce011f9a073b183e
 

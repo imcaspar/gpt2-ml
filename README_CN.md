@@ -18,7 +18,7 @@
 
 
 ## 预训练模型
-15 亿参数中文预训练模型 [**[Google Drive 下载]**](https://drive.google.com/open?id=1n_5-tgPpQ1gqbyLPbP1PwiFi2eo7SWw_)
+15 亿参数中文预训练模型 [**[Google Drive 下载]**](https://drive.google.com/file/d/1IzWpQ6I2IgfV7CldZvFJnZ9byNDZdO4n)
 
 SHA256: 4a6e5124df8db7ac2bdd902e6191b807a6983a7f5d09fb10ce011f9a073b183e
 

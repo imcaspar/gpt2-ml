@@ -185,7 +185,7 @@ total_written = 0
 train_file = args.base_fn + 'train_wiki19_{:04d}.tfrecord'.format(args.fold)
 with S3TFRecordWriter(train_file) as train_writer:
     for article in buffered_and_sliding_window_article_iterator(tokenizer,
-                                                                final_desired_size=max(args.max_seq_length + 1, 1025)):
+                                                                final_desired_size=args.max_seq_length + 1):
         writer2use = train_writer
         assert len(article['input_ids']) == (args.max_seq_length + 1)
 

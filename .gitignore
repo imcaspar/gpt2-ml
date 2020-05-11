@@ -130,3 +130,9 @@ dmypy.json
 
 # vscode
 .vscode/
+
+# dataset
+dataset/raw/
+
+# models
+models/

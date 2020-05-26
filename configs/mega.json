@@ -1,5 +1,5 @@
 {
-  "vocab_size": 21130,
+  "vocab_size": 8021,
   "hidden_size": 1536,
   "attention_probs_dropout_prob": 0.1,
   "hidden_dropout_prob": 0.1,

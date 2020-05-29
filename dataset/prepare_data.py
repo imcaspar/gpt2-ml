@@ -8,7 +8,7 @@ import argparse
 import ujson as json
 # from sample.encoder import get_encoder, tokenize_for_grover_training, detokenize, sliding_window, create_int_feature
 import random
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import collections
 import os
 from tempfile import TemporaryDirectory

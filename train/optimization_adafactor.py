@@ -85,7 +85,7 @@ def create_optimizer(loss, init_lr, num_train_steps, num_warmup_steps, use_tpu):
     return train_op, train_metrics
 
 
-class AdaFactorOptimizer(tf.train.Optimizer):
+class AdaFactorOptimizer(tf.compat.v1.train.Optimizer):
     """here's the optimizer we'll use"""
 
     def __init__(self,

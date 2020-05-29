@@ -4,7 +4,7 @@ import argparse
 import json
 import re
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import numpy as np
 
 from train.modeling import GroverModel, GroverConfig, sample
@@ -12,7 +12,7 @@ from tokenization import tokenization
 
 ##### ignore tf deprecated warning temporarily
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.DEBUG)
+tf.logging.set_verbosity(tf.logging.DEBUG)
 from tensorflow.python.util import deprecation
 deprecation._PRINT_DEPRECATION_WARNINGS = False
 try:
@@ -42,15 +42,15 @@ parser.add_argument(
     help='Text to complete',
 )
 parser.add_argument(
-    '-model_config_fn',
-    dest='model_config_fn',
+    '-config_fn',
+    dest='config_fn',
     default='configs/mega.json',
     type=str,
     help='Configuration JSON for the model',
 )
 parser.add_argument(
-    '-model_ckpt',
-    dest='model_ckpt',
+    '-ckpt_fn',
+    dest='ckpt_fn',
     default='../models/mega/model.ckpt',
     type=str,
     help='checkpoint file for the model',
@@ -107,7 +107,7 @@ parser.add_argument(
 parser.add_argument(
     '-eos_token',
     dest='eos_token',
-    default=60000,
+    default=102,
     type=int,
     help='eos token id',
 )
@@ -143,7 +143,7 @@ args = parser.parse_args()
 proj_root_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 vocab_file_path = os.path.join(proj_root_path, "tokenization/clue-vocab.txt")
 tokenizer = tokenization.FullTokenizer(vocab_file=vocab_file_path , do_lower_case=True)
-news_config = GroverConfig.from_json_file(args.model_config_fn)
+news_config = GroverConfig.from_json_file(args.config_fn)
 
 # We might have to split the batch into multiple chunks if the batch size is too large
 default_mbs = {12: 32, 24: 16, 48: 3}
@@ -168,7 +168,7 @@ with tf.Session(config=tf_config, graph=tf.Graph()) as sess:
                            do_topk=False)
 
     saver = tf.train.Saver()
-    saver.restore(sess, args.model_ckpt)
+    saver.restore(sess, args.ckpt_fn)
     print('🍺Model loaded. \nInput something please:⬇️')
     text = input()
     while text != "":

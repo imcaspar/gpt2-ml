@@ -14,7 +14,7 @@
 # limitations under the License.
 
 import collections
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 
 def _decode_record(record, name_to_features):

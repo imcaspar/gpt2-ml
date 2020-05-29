@@ -18,7 +18,7 @@ import json
 import math
 
 import six
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from train import optimization_adafactor
 from train.utils import get_assignment_map_from_checkpoint, get_shape_list, get_attention_mask, gelu, layer_norm, dropout, \

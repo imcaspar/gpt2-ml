@@ -4,7 +4,7 @@ import argparse
 import json
 import re
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 import numpy as np
 
 from train.modeling import GroverModel, GroverConfig, sample
@@ -12,7 +12,7 @@ from tokenization import tokenization
 
 ##### ignore tf deprecated warning temporarily
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
-tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.DEBUG)
+tf.logging.set_verbosity(tf.logging.DEBUG)
 from tensorflow.python.util import deprecation
 deprecation._PRINT_DEPRECATION_WARNINGS = False
 try:

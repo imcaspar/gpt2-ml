@@ -14,7 +14,7 @@
 - [x] 移植 bert tokenizer，添加多语言支持
 - [x] 15亿参数 GPT2 中文预训练模型( 15G 语料，训练 10w 步 )
 - [x] 开箱即用的模型生成效果 demo [#](https://github.com/imcaspar/gpt2-ml#google-colab)
-- [ ] 15亿参数 GPT2 中文预训练模型( 50G 语料，训练 100w 步 ，**预计 12 月初发布**)
+- [x] 15亿参数 GPT2 中文预训练模型( 30G 语料，训练 22w 步 )
 
 
 ## 预训练模型
@@ -24,7 +24,7 @@ SHA256: 4a6e5124df8db7ac2bdd902e6191b807a6983a7f5d09fb10ce011f9a073b183e
 
 训练语料来自 [THUCNews](http://thuctc.thunlp.org/#%E4%B8%AD%E6%96%87%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E6%95%B0%E6%8D%AE%E9%9B%86THUCNews) 以及 [nlp_chinese_corpus](https://github.com/brightmart/nlp_chinese_corpus)，清洗后总文本量约 15G 
 
-使用 [Cloud TPU Pod v3-256](https://cloud.google.com/tpu/docs/types-zones#types) 训练 10w 步
+使用 [Cloud TPU Pod v3-256](https://cloud.google.com/tpu/docs/types-zones#types) 训练 22w 步
 
 ![loss](./.github/loss.png)
 

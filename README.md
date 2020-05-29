@@ -14,7 +14,7 @@
 - [x] Ported bert tokenizer, multilingual corpus compatible
 - [x] 1.5B GPT2 pretrained Chinese model ( ~15G corpus, 10w steps )
 - [x] Batteries-included Colab demo [#](https://github.com/imcaspar/gpt2-ml#google-colab)
-- [ ] 1.5B GPT2 pretrained Chinese model ( ~50G corpus, 100w steps )
+- [x] 1.5B GPT2 pretrained Chinese model ( ~30G corpus, 22w steps )
 
 
 ## Pretrained Model
@@ -24,7 +24,7 @@ SHA256: 4a6e5124df8db7ac2bdd902e6191b807a6983a7f5d09fb10ce011f9a073b183e
 
 Corpus from [THUCNews](http://thuctc.thunlp.org/#%E4%B8%AD%E6%96%87%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E6%95%B0%E6%8D%AE%E9%9B%86THUCNews) and [nlp_chinese_corpus](https://github.com/brightmart/nlp_chinese_corpus)
 
-Using [Cloud TPU Pod v3-256](https://cloud.google.com/tpu/docs/types-zones#types) to train 10w steps
+Using [Cloud TPU Pod v3-256](https://cloud.google.com/tpu/docs/types-zones#types) to train 22w steps
 
 ![loss](./.github/loss.png)
 

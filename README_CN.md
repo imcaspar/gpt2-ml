@@ -18,9 +18,9 @@
 
 
 ## 预训练模型
-15 亿参数中文预训练模型 [**[Google Drive 下载]**](https://drive.google.com/file/d/1IzWpQ6I2IgfV7CldZvFJnZ9byNDZdO4n)
+15 亿参数中文预训练模型( 30G 语料，训练 22w 步 ) [**[Google Drive 下载]**](https://drive.google.com/file/d/1bhZhjNSgV1CGI-PR2NDzNtda5FAwN29B) SHA256: e698cc97a7f5f706f84f58bb469d614e51d3c0ce5f9ab9bf77e01e3fcb41d482
 
-SHA256: 4a6e5124df8db7ac2bdd902e6191b807a6983a7f5d09fb10ce011f9a073b183e
+15 亿参数中文预训练模型( 15G 语料，训练 10w 步 ) [**[Google Drive 下载]**](https://drive.google.com/file/d/1IzWpQ6I2IgfV7CldZvFJnZ9byNDZdO4n) SHA256: 4a6e5124df8db7ac2bdd902e6191b807a6983a7f5d09fb10ce011f9a073b183e
 
 训练语料来自 [THUCNews](http://thuctc.thunlp.org/#%E4%B8%AD%E6%96%87%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E6%95%B0%E6%8D%AE%E9%9B%86THUCNews) 以及 [nlp_chinese_corpus](https://github.com/brightmart/nlp_chinese_corpus)，清洗后总文本量约 15G 
 

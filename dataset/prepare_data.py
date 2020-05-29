@@ -69,21 +69,10 @@ tokenizer = tokenization.FullTokenizer(
     vocab_file="bert-base-chinese-vocab.txt", do_lower_case=True)
 
 
-class S3TFRecordWriter(object):
+class TFRecordWriter(object):
     def __init__(self, fn):
         self.fn = fn
-        if fn.startswith('s3://'):
-            from boto3.s3.transfer import TransferConfig
-            import boto3
-            self.gclient = None
-            self.s3client = boto3.client('s3',
-                                         )
-            self.storage_dir = TemporaryDirectory()
-            self.writer = tf.python_io.TFRecordWriter(
-                os.path.join(self.storage_dir.name, 'temp.tfrecord'))
-            self.bucket_name, self.file_name = self.fn.split(
-                's3://', 1)[1].split('/', 1)
-        elif fn.startswith('gs://'):
+        if fn.startswith('gs://'):
             from google.cloud import storage
             self.s3client = None
             self.gclient = storage.Client()
@@ -107,17 +96,6 @@ class S3TFRecordWriter(object):
     def close(self):
         self.writer.close()
 
-        if self.s3client is not None:
-            from boto3.s3.transfer import TransferConfig
-            config = TransferConfig(multipart_threshold=1024 * 25, max_concurrency=10,
-                                    multipart_chunksize=1024 * 25, use_threads=True)
-            self.s3client.upload_file(
-                os.path.join(self.storage_dir.name, 'temp.tfrecord'),
-                self.bucket_name,
-                self.file_name,
-                ExtraArgs={'ACL': 'public-read'}, Config=config,
-            )
-            self.storage_dir.cleanup()
         if self.gclient is not None:
             bucket = self.gclient.get_bucket(self.bucket_name)
             blob = bucket.blob(self.file_name)
@@ -183,7 +161,7 @@ def buffered_and_sliding_window_article_iterator(tokenizer, final_desired_size=1
 # OK now write the tfrecord file
 total_written = 0
 train_file = args.base_fn + 'train_wiki19_{:04d}.tfrecord'.format(args.fold)
-with S3TFRecordWriter(train_file) as train_writer:
+with TFRecordWriter(train_file) as train_writer:
     for article in buffered_and_sliding_window_article_iterator(tokenizer,
                                                                 final_desired_size=args.max_seq_length + 1):
         writer2use = train_writer

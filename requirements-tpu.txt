@@ -3,7 +3,7 @@ regex==2019.4.14
 h5py==2.10.0
 numpy==1.18.4
 tensorboard==1.15.0
-tensorflow==1.15.2
+tensorflow==1.15.4
 tensorflow-estimator==1.15.1
 tqdm==4.31.1
 requests==2.22.0

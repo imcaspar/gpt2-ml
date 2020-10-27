@@ -66,7 +66,7 @@ random.seed(args.seed + args.fold)
 
 #encoder = get_encoder()
 tokenizer = tokenization.FullTokenizer(
-    vocab_file="bert-base-chinese-vocab.txt", do_lower_case=True)
+    vocab_file="clue-vocab.txt", do_lower_case=True)
 
 
 class TFRecordWriter(object):

@@ -61,3 +61,8 @@ https://github.com/google-research/bert
 https://github.com/rowanz/grover
 
 Research supported with Cloud TPUs from Google's TensorFlow Research Cloud (TFRC)
+
+## Press
+[[机器之心] 只需单击三次，让中文GPT-2为你生成定制故事](https://mp.weixin.qq.com/s/FpoSNNKZSQOE2diPvJDHog)
+
+[[科学空间] 现在可以用Keras玩中文GPT2了](https://kexue.fm/archives/7292)

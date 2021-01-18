@@ -20,8 +20,8 @@
 ## 预训练模型
 | Size | Language | Corpus | Vocab | Link1 | Link2 | SHA256 |
 | ---- | -------- | ------ | ----- | ----- | ----- | ------ |
-| 1.5B parameters | Chinese  | ~30G   | CLUE ( 8021 tokens )  | [**Google Drive**](https://drive.google.com/file/d/1mT_qCQg4AWnAXTwKfsyyRWCRpgPrBJS3) | [**BaiduPan (ffz6)**](https://pan.baidu.com/s/1yiuTHXUr2DpyBqmFYLJH6A) | e698cc97a7f5f706f84f58bb469d614e<br/>51d3c0ce5f9ab9bf77e01e3fcb41d482 |
-| 1.5B parameters | Chinese  | ~15G   | Bert ( 21128 tokens ) | [**Google Drive**](https://drive.google.com/file/d/1IzWpQ6I2IgfV7CldZvFJnZ9byNDZdO4n) | [**BaiduPan (q9vr)**](https://pan.baidu.com/s/1TA_3e-u2bXg_hcx_NwVbGw) | 4a6e5124df8db7ac2bdd902e6191b807<br/>a6983a7f5d09fb10ce011f9a073b183e |
+| 1.5B Params | Chinese  | ~30G   | CLUE ( 8021 tokens )  | [**Google Drive**](https://drive.google.com/file/d/1mT_qCQg4AWnAXTwKfsyyRWCRpgPrBJS3) | [**Baidu Pan (ffz6)**](https://pan.baidu.com/s/1yiuTHXUr2DpyBqmFYLJH6A) | e698cc97a7f5f706f84f58bb469d614e<br/>51d3c0ce5f9ab9bf77e01e3fcb41d482 |
+| 1.5B Params | Chinese  | ~15G   | Bert ( 21128 tokens ) | [**Google Drive**](https://drive.google.com/file/d/1IzWpQ6I2IgfV7CldZvFJnZ9byNDZdO4n) | [**Baidu Pan (q9vr)**](https://pan.baidu.com/s/1TA_3e-u2bXg_hcx_NwVbGw) | 4a6e5124df8db7ac2bdd902e6191b807<br/>a6983a7f5d09fb10ce011f9a073b183e |
 
 训练语料来自 [THUCNews](http://thuctc.thunlp.org/#%E4%B8%AD%E6%96%87%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB%E6%95%B0%E6%8D%AE%E9%9B%86THUCNews) 以及 [nlp_chinese_corpus](https://github.com/brightmart/nlp_chinese_corpus)，清洗后总文本量约 15G 
 

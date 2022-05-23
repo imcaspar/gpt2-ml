@@ -6,7 +6,7 @@ This fork fixed some download link and made the Colab Notebook sustainable which
 
 # **GPT2** for Multiple Languages
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/imcaspar/gpt2-ml/blob/master/pretrained_model_demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/zxkmm/gpt2-ml-fixed/blob/master/gpt2_ml_fixed.ipynb)
 <!--
 [![GitHub](https://img.shields.io/github/license/imcaspar/gpt2-ml)](https://github.com/imcaspar/gpt2-ml)
 [![GitHub All Releases](https://img.shields.io/github/downloads/imcaspar/gpt2-ml/total)](https://github.com/imcaspar/gpt2-ml/releases)
@@ -38,7 +38,7 @@ Using [Cloud TPU Pod v3-256](https://cloud.google.com/tpu/docs/types-zones#types
 ## Google Colab
 With just 2 clicks (not including Colab auth process), the 1.5B pretrained Chinese model demo is ready to go:
 
-[**[Colab Notebook]**](https://colab.research.google.com/github/imcaspar/gpt2-ml/blob/master/pretrained_model_demo.ipynb)
+[**[Colab Notebook]**](https://github.com/zxkmm/gpt2-ml-fixed/blob/master/gpt2_ml_fixed.ipynb)
 
 <img src="./.github/demo.png" width="640">
 
@@ -51,9 +51,9 @@ The contents in this repository are for academic research purpose, and we do not
 
 ```
 @misc{GPT2-ML,
-  author = {Zhibo Zhang},
+  author = {Zhibo Zhang},{zxkmm}
   title = {GPT2-ML: GPT-2 for Multiple Languages},
-  year = {2019},
+  year = {2019},{2022}
   publisher = {GitHub},
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/imcaspar/gpt2-ml}},

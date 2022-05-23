@@ -1,6 +1,6 @@
 # About This Fork  
 This is a fork of [gpt2-ml](https://github.com/imcaspar/gpt2-ml), gpt2-ml is a wonderful project which is not maintained anymore. Hope [@imcaspar](https://github.com/imcaspar) is all good. 
-This fork fixed some download link and made the Colab Notebook sustainable which means you don't need to download pre-trained file every time... 
+This fork fixed some download link and made the pre-trained sustainable which means you don't need to download pre-trained file every time... 
 # 
 <img src="./.github/logo.svg" width="480">
 

@@ -1,13 +1,20 @@
+# 关于这个分支
+这是 gpt2-ml 的一个分支，gpt2-ml 是一个不再维护的精彩项目。 希望[@imcaspar](https://github.com/imcaspar) 一切都好。 这个分支修复了一些下载链接并使预训练可持续，这意味着您不需要每次都下载预训练文件......
+# Credit/致谢
+[imcaspar](https://github.com/imcaspar)
+[pt2-ml](https://github.com/imcaspar/gpt2-ml)
+#
 <img src="./.github/logo.svg" width="480">
 
 # **GPT2** for Multiple Languages
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/imcaspar/gpt2-ml/blob/master/pretrained_model_demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/zxkmm/gpt2-ml-fixed/blob/master/gpt2_ml_fixed.ipynb)
+<!--
 [![GitHub](https://img.shields.io/github/license/imcaspar/gpt2-ml)](https://github.com/imcaspar/gpt2-ml)
 [![GitHub All Releases](https://img.shields.io/github/downloads/imcaspar/gpt2-ml/total)](https://github.com/imcaspar/gpt2-ml/releases)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/imcaspar/gpt2-ml/issues)
 [![GitHub stars](https://img.shields.io/github/stars/imcaspar/gpt2-ml?style=social)](https://github.com/imcaspar/gpt2-ml)
-
+-->
 [**中文说明**](./README_CN.md) | [**English**](./README.md)
 
 - [x] 简化整理 GPT2 训练代码（based on Grover, supporting TPUs）
@@ -33,7 +40,7 @@
 ## Google Colab
 只需两次鼠标点击（不包括 Colab 授权流程），体验 15 亿参数中文预训练模型生成效果：
 
-[**[Colab Notebook]**](https://colab.research.google.com/github/imcaspar/gpt2-ml/blob/master/pretrained_model_demo.ipynb)
+[**[Colab Notebook]**](https://github.com/zxkmm/gpt2-ml-fixed/blob/master/gpt2_ml_fixed.ipynb)
 
 <img src="./.github/demo.png" width="640">
 

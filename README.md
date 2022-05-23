@@ -1,13 +1,18 @@
+# About This Fork  
+This is a fork of [gpt2-ml](https://github.com/imcaspar/gpt2-ml), gpt2-ml is a wonderful project which is not maintained anymore. Hope [@imcaspar](https://github.com/imcaspar) is all good. 
+This fork fixed some download link and made the Colab Notebook sustainable which means you don't need to download pre-trained file every time... 
+# 
 <img src="./.github/logo.svg" width="480">
 
 # **GPT2** for Multiple Languages
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/imcaspar/gpt2-ml/blob/master/pretrained_model_demo.ipynb)
+<!--
 [![GitHub](https://img.shields.io/github/license/imcaspar/gpt2-ml)](https://github.com/imcaspar/gpt2-ml)
 [![GitHub All Releases](https://img.shields.io/github/downloads/imcaspar/gpt2-ml/total)](https://github.com/imcaspar/gpt2-ml/releases)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/imcaspar/gpt2-ml/issues)
 [![GitHub stars](https://img.shields.io/github/stars/imcaspar/gpt2-ml?style=social)](https://github.com/imcaspar/gpt2-ml)
-
+-->
 [**中文说明**](./README_CN.md) | [**English**](./README.md)
 
 - [x] Simplifed GPT2 train scripts（based on Grover, supporting TPUs）

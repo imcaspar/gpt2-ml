@@ -1,8 +1,8 @@
 # 关于这个分支
 这是 gpt2-ml 的一个分支，gpt2-ml 是一个不再维护的精彩项目。 希望[@imcaspar](https://github.com/imcaspar) 一切都好。 这个分支修复了一些下载链接并使预训练可持续，这意味着您不需要每次都下载预训练文件......
-# Credit/致谢
-[imcaspar](https://github.com/imcaspar)
-[pt2-ml](https://github.com/imcaspar/gpt2-ml)
+# Credit
+### [imcaspar](https://github.com/imcaspar)
+### [gpt2-ml](https://github.com/imcaspar/gpt2-ml)
 #
 <img src="./.github/logo.svg" width="480">
 

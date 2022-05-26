@@ -7,4 +7,4 @@ tensorflow==1.15.4
 tensorflow-estimator==1.15.1
 tqdm==4.31.1
 requests==2.22.0
-ujson==2.0.3
+ujson==5.2.0
